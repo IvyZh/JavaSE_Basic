@@ -1,5 +1,7 @@
 package com.ivy.github.day05;
 
+import com.ivy.github.day04.MyArrayUtils;
+
 // 排序Demo
 
 //排序的分类：
@@ -18,6 +20,27 @@ public class SortDemo {
 
 	private static void test01() {
 		int[] arr = { 2, 9, 6, 7, 4, 1 };
+
+		MyArrayUtils.printArray(arr);
+		bubbleSort(arr);
+		MyArrayUtils.printArray(arr);
+	}
+
+	/**
+	 * 冒泡排序
+	 * @param arr
+	 * 冒泡排序(Bubble Sort)：
+	这是最简单的排序法，基本思路：
+	对未排序的各元素从头到尾依次比较相邻的两个元素大小关系，若大于则交换位置，经过第一轮比较排序后可得出最大值，然后使用同样的方法把剩下的元素逐个比较即可。
+	可以看出若有N个元素，那么一共要进行N-1轮比较，第M轮要进行N-M次比较。
+	 */
+	private static void bubbleSort(int[] arr) {
+		// 2, 9, 6, 7, 4, 1
+
+		for (int i = 0; i < arr.length; i++) {
+			
+		}
+
 	}
 
 }
