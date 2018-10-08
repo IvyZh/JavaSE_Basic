@@ -7,4 +7,18 @@ package com.ivy.github.day09;
 
 public class FlyWeightDemo {
 
+	public static void main(String[] args) {
+
+		Integer i1 = new Integer(127);
+		Integer i2 = new Integer(127);
+		Integer i3 = 127;
+		Integer i4 = 127;
+		System.out.println(i1 == i2);
+		System.out.println(i2 == i3);
+		System.out.println(i1 == i3);
+		
+		System.out.println(i4 == i3);
+		
+		
+	}
 }
